@@ -12,17 +12,17 @@ class shape {
     }
 
     static class rectangle{
-			 double length;
-			 double breath;
-		 
-		 double recarea() {
-			 return (double) (length*breath);
-		 }
+		double length;
+		double breath;
+		
+		double recarea() {
+		return (double) (length*breath);
+		}
 	}
 
     public static void main(String[] args) {
-		// TODO Auto-generated method stub
-       Scanner sc=new Scanner(System.in);
+		
+        Scanner sc=new Scanner(System.in);
 		System.out.println("enter the objective");
 		String str=sc.nextLine();
 		
