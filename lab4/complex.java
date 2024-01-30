@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class complex {
 
     private double x;
@@ -13,7 +15,7 @@ public class complex {
     }
 
     public void input() {
-
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the real part (x): ");
         x = scanner.nextDouble();
         System.out.print("Enter the imaginary part (y): ");
@@ -38,15 +40,32 @@ public class complex {
 
     public static void main(String[] args) {
 
-        complex complex1 = new complex(3, 4);
-        complex complex2 = new complex(1, 2);
+        
+        complex complex1 = new complex();
+        complex complex2 = new complex();
 
+        
+        Scanner sc = new Scanner(System.in);
+
+        
+        System.out.println("Enter the first complex number:");
+        complex1.input();
+
+        
+        System.out.println("Enter the second complex number:");
+        complex2.input();
+
+        
+        sc.close();
+
+        
         System.out.println("Complex Number 1:");
         complex1.display();
 
         System.out.println("\nComplex Number 2:");
         complex2.display();
 
+        
         complex sum = complex1.add(complex2);
         System.out.println("\nSum of Complex Numbers:");
         sum.display();
